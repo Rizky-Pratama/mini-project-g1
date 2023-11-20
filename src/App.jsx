@@ -2,6 +2,7 @@ import './App.css'
 import { Route, Routes, useNavigate } from "react-router-dom";
 import LandingPage from './pages/LandingPage'
 import EventPage from './pages/EventPage'
+import CreateEvent from './pages/CreateEvent'
 import LandingPageLogin from "./pages/Auth/LandingPageLogin";
 import LandingPageRegister from "./pages/Auth/LandingPageRegister";
 import UserDash from "./pages/UserDash/UserDash";
@@ -39,6 +40,7 @@ function App() {
         <Route path="/auth/register" element={<LandingPageRegister />} />
         <Route path="/userdash" element={<UserDash />} />
         <Route path="/auth/verifyemail" element={<VerifyEmail />} />
+        <Route path="/create/event" element={<CreateEvent />} />
       </Routes>
     </div>
   );
